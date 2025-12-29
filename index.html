@@ -81,10 +81,10 @@
 <body>
     <h1>Privacy Policy</h1>
     <p><strong>Book of Mormon Mastery</strong></p>
-    <p class="date">Last Updated: December 17, 2025</p>
+    <p class="date">Last Updated: December 28, 2025</p>
 
     <div class="summary-box">
-        <strong>The short version:</strong> We collect minimal anonymous analytics to improve the app. Your game progress stays on your device.
+        <strong>The short version:</strong> You can use the app without an account—your progress stays on your device. If you create an optional account, your progress syncs securely to the cloud. We collect minimal anonymous analytics to improve the app.
     </div>
 
     <h2>Information We Collect</h2>
@@ -96,13 +96,49 @@
         <li><strong>User Preferences:</strong> Settings and customizations you choose</li>
         <li><strong>Study Progress:</strong> Scripture mastery levels and study list items</li>
     </ul>
-    <p>This data:</p>
+    <p><strong>For guest users (no account)</strong>, this data:</p>
     <ul>
-        <li>Never leaves your device</li>
+        <li>Stays on your device only</li>
         <li>Is not transmitted to any server</li>
         <li>Is not shared with any third party</li>
         <li>Can be deleted by uninstalling the App or clearing app data</li>
     </ul>
+
+    <h3>Account &amp; Cloud Sync (Optional)</h3>
+    <p>If you choose to create an account, we store additional information to enable cloud sync:</p>
+
+    <p><strong>Account Information:</strong></p>
+    <ul>
+        <li>Email address (for email sign-up) or OAuth identifier (for Google/Apple sign-in)</li>
+        <li>Display name (optional)</li>
+        <li>Account creation date</li>
+    </ul>
+
+    <p><strong>Synced Progress Data:</strong></p>
+    <p>When you're signed in, your game progress syncs to our cloud service to enable:</p>
+    <ul>
+        <li>Cross-device sync (play on multiple devices)</li>
+        <li>Progress backup (restore if you get a new device)</li>
+        <li>Continuity (pick up where you left off)</li>
+    </ul>
+
+    <p><strong>Data we sync:</strong></p>
+    <ul>
+        <li>Game history and scores</li>
+        <li>XP, levels, and achievements</li>
+        <li>Streaks and daily goals progress</li>
+        <li>Scripture mastery progress</li>
+        <li>Missed questions for study review</li>
+        <li>Personal best records</li>
+    </ul>
+
+    <p><strong>Data we do NOT sync (stays local only):</strong></p>
+    <ul>
+        <li>Game preferences (sound, instructions shown)</li>
+        <li>Temporary game state</li>
+    </ul>
+
+    <p>Your synced data is stored securely in our database (hosted by Supabase) and is associated with your account. You can delete all cloud data at any time by deleting your account.</p>
 
     <h3>Anonymous Analytics Data</h3>
     <p>To improve the App and fix bugs, we collect limited anonymous usage data:</p>
@@ -125,12 +161,12 @@
 
     <p><strong>What we DO NOT collect:</strong></p>
     <ul>
-        <li>Personal identification information (name, email, phone)</li>
+        <li>Personal identification information (name, email, phone) — except for optional accounts</li>
         <li>Location data</li>
         <li>Advertising identifiers</li>
-        <li>Your game progress, scores, or achievements</li>
+        <li>Your game progress, scores, or achievements (in analytics)</li>
         <li>Content of your study lists</li>
-        <li>Any data that could identify you personally</li>
+        <li>Any data that could identify you personally (analytics are anonymous)</li>
     </ul>
 
     <p>All analytics data is:</p>
@@ -153,6 +189,14 @@
         <li>Remember your preferences</li>
     </ul>
 
+    <h3>Account Data</h3>
+    <p>We use account and synced data solely to:</p>
+    <ul>
+        <li>Authenticate you across devices</li>
+        <li>Sync your progress between devices</li>
+        <li>Restore your progress if you get a new device</li>
+    </ul>
+
     <h3>Analytics Data</h3>
     <p>We use anonymous analytics data to:</p>
     <ul>
@@ -165,7 +209,15 @@
     <hr>
 
     <h2>Third-Party Services</h2>
-    <p>The App uses the following third-party services for analytics:</p>
+    <p>The App uses the following third-party services:</p>
+
+    <p><strong>Supabase</strong> (Account &amp; Data Storage)</p>
+    <ul>
+        <li>Purpose: User authentication and cloud data storage</li>
+        <li>Data collected: Account info, synced game progress (for signed-in users only)</li>
+        <li>Privacy policy: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></li>
+        <li>Note: Only used if you create an account; guest users have no data with Supabase</li>
+    </ul>
 
     <p><strong>Sentry</strong> (Error Tracking)</p>
     <ul>
@@ -181,7 +233,7 @@
         <li>Privacy policy: <a href="https://posthog.com/privacy" target="_blank">https://posthog.com/privacy</a></li>
     </ul>
 
-    <p>These services receive only anonymous, non-personal data as described above.</p>
+    <p>Analytics services (Sentry, PostHog) receive only anonymous, non-personal data. Supabase receives account information only if you choose to create an account.</p>
 
     <hr>
 
@@ -195,11 +247,30 @@
     </ul>
 
     <h3>Deleting Your Data</h3>
-    <p>To delete your locally stored data:</p>
+
+    <p><strong>Local Data:</strong></p>
+    <p>To delete data stored on your device:</p>
     <ul>
         <li><strong>iOS:</strong> Delete the app, or go to Settings &gt; General &gt; iPhone Storage &gt; Book of Mormon Mastery &gt; Delete App</li>
         <li><strong>Android:</strong> Delete the app, or go to Settings &gt; Apps &gt; Book of Mormon Mastery &gt; Clear Data</li>
     </ul>
+
+    <p><strong>Account &amp; Cloud Data:</strong></p>
+    <p>If you have an account and want to delete all cloud data:</p>
+    <ol>
+        <li>Open the App and go to Profile</li>
+        <li>Tap "Delete Account"</li>
+        <li>Confirm deletion</li>
+    </ol>
+    <p>This will:</p>
+    <ul>
+        <li>Permanently delete your account</li>
+        <li>Delete all synced progress data from our servers</li>
+        <li>Clear all local data on that device</li>
+        <li>This action cannot be undone</li>
+    </ul>
+
+    <p><strong>Analytics Data:</strong></p>
     <p>Analytics data is anonymous and cannot be traced back to you or deleted on request (because we don't know which data is yours).</p>
 
     <hr>
@@ -218,12 +289,31 @@
 
     <h2>Data Security</h2>
     <p><strong>Local Data:</strong> Stored using your device's standard secure storage mechanisms (iOS Keychain/Android Keystore-backed storage).</p>
+    <p><strong>Account Data:</strong> Transmitted securely via HTTPS. Stored in Supabase's PostgreSQL database with Row Level Security (RLS) ensuring you can only access your own data. Authentication tokens stored securely using Expo SecureStore.</p>
     <p><strong>Analytics Data:</strong> Transmitted securely via HTTPS to Sentry and PostHog, who maintain industry-standard security practices.</p>
 
     <hr>
 
+    <h2>Data Retention</h2>
+    <p><strong>Local Data:</strong> Retained on your device until you delete the app or clear app data.</p>
+    <p><strong>Account Data:</strong></p>
+    <ul>
+        <li>Retained while your account is active</li>
+        <li>Deleted immediately upon account deletion request</li>
+        <li>We do not retain backups of deleted account data</li>
+    </ul>
+    <p><strong>Analytics Data:</strong></p>
+    <ul>
+        <li>Sentry: Error data retained for 90 days</li>
+        <li>PostHog: Usage data retained per PostHog's retention policy</li>
+    </ul>
+
+    <hr>
+
     <h2>Children's Privacy</h2>
-    <p>The App does not collect personal information from anyone, including children under 13. The anonymous analytics data we collect cannot identify any individual user. The App is educational in nature and appropriate for users of all ages.</p>
+    <p>The App is educational in nature and appropriate for users of all ages.</p>
+    <p><strong>Guest users:</strong> No personal information is collected.</p>
+    <p><strong>Account creation:</strong> Creating an account requires an email address or social sign-in. Users under 13 should have parental consent before creating an account. The App can be fully used without an account.</p>
 
     <hr>
 
@@ -246,7 +336,7 @@
         </tr>
         <tr>
             <td>Personal data collected</td>
-            <td>None</td>
+            <td>Only if you create an account (email/OAuth ID)</td>
         </tr>
         <tr>
             <td>Anonymous analytics</td>
@@ -254,11 +344,11 @@
         </tr>
         <tr>
             <td>Data sent to servers</td>
-            <td>Anonymous crash/usage data only</td>
+            <td>Anonymous analytics always; game progress only if signed in</td>
         </tr>
         <tr>
             <td>Third-party sharing</td>
-            <td>Analytics providers only</td>
+            <td>Supabase (accounts), Sentry/PostHog (analytics)</td>
         </tr>
         <tr>
             <td>Advertising</td>
@@ -270,15 +360,19 @@
         </tr>
         <tr>
             <td>Account required</td>
-            <td>No</td>
+            <td>No (optional for cloud sync)</td>
         </tr>
         <tr>
             <td>Works offline</td>
             <td>Yes</td>
         </tr>
+        <tr>
+            <td>Account deletion</td>
+            <td>Available in-app; deletes all cloud data</td>
+        </tr>
     </table>
 
     <hr>
-    <p class="date">This privacy policy is effective as of December 17, 2025.</p>
+    <p class="date">This privacy policy is effective as of December 28, 2025.</p>
 </body>
 </html>
